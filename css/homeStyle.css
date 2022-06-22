@@ -1,0 +1,191 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+html{
+	max-height: 100%;
+	background-image: url(../img/wallpaper1.jpg);
+	min-height: 100%;
+	background-size: cover;
+}
+
+
+
+.content:before{
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.content2{
+	margin: 20px;
+	padding-top: 30px;
+	background-color: #00000095;
+	color: #ffffff;
+	position: relative;
+	border-radius: 5px;
+}
+
+h1{
+	padding: 5px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.time{
+	position: relative;
+}
+
+.info{
+	display: flex;
+	justify-content: center;
+	justify-self: center;
+}
+
+.table{
+	margin: 50px;
+	font-size: 30px;
+	position: relative;
+}
+
+p{
+	padding: 20px;
+}
+
+.btnHistory{
+	margin: 5px;
+	font-size: 20px;
+	padding: 10px;
+	border: none;
+	border-radius: 3px;
+	background: #68a800;
+	color: #ffffff;
+	position: relative;
+	text-decoration: none;
+}
+
+.btnHistory:hover{
+
+	background: #ffffff;
+	color: #68a800;
+	transition: all 0.6s;
+}
+
+.history{
+	display: none;
+	transition: all 0.6s;
+}
+
+.history2{
+	position: fixed;
+	top: 2%;
+	padding: 10px;
+	min-width: 100%;
+	min-height: 100%;
+	background-color: #050700;
+	color: #ffffff;
+	border-radius: 5px;
+	transition: all 0.6s;
+	overflow: scroll;
+	z-index: 100%;
+
+}
+
+h2{
+	padding: 5px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #68a800;
+}
+
+table{
+	display: flex;
+	justify-content: center;
+}
+
+.btnBack{
+	margin: 5px;
+	font-size: 20px;
+	padding: 10px;
+	border: none;
+	border-radius: 3px;
+	background: #68a800;
+	color: #ffffff;
+	position: relative;
+}
+
+.btnBack:hover{
+	background: #ffffff;
+	color: #68a800;
+	transition: all 0.6s;
+}
+
+.showInfo{
+	margin: 5px;
+	padding: 5px;
+	background: #68a80020;
+	color: #ffffff;
+	font-size: 20px;
+	height: 500px;
+	overflow-y: scroll;
+	border-radius: 5px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+
+}
+
+.btnDownload{
+	margin: 20px;
+	font-size: 20px;
+	padding: 10px;
+	border: none;
+	border-radius: 3px;
+	background: #68a800;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.progreso{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+
+}
+
+.progreso2{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: visible;
+	opacity: 1;
+}
+
+.graficosContent{
+	background-color: red;
+
+	width: 95%;
+	height: 400px;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #CCC;
+	background: #FFF;
+	position: relative;
+	margin: 8% auto;
+	transition: all 5s ease-in-out;
+}

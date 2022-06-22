@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+html{
+	max-height: 100%;
+	background-image: url(../img/wallpaper2.jpeg);
+	min-height: 100%;
+	background-size: cover;
+
+}
+
+.content:before{
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.textLogin{
+	margin: 0 auto;
+	font-size: 40px;
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	margin-top: 10%;
+}
+
+.login{
+	padding: 20px;
+	text-align: center;
+}
+
+.btnLogin{
+	font-size: 30px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background: #68a800;
+	color: #ffffff;
+	margin: 30px 0;
+	position: relative;
+}
+
+.btnLogin:hover{
+	background: #ffffff;
+	color: #68a800;
+	transition: all 0.6s;
+}
