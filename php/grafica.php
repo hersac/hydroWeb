@@ -1,8 +1,8 @@
 <?php 
 
-function varGraficos(){
+function verGraficos(){
 
-  $url="https://c-h-finca-la-primavera-default-rtdb.firebaseio.com/history.json";
+  $url="https://c-h-finca-la-primavera-default-rtdb.firebaseio.com/Historial.json";
   $ch=curl_init();
   curl_setopt($ch, CURLOPT_URL, $url);
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -10,9 +10,11 @@ function varGraficos(){
   curl_close($ch);
   $data= json_decode($response, true);
   foreach ($data as $key => $value) {
+      foreach ($value as $key2 => $value2) {
 
-    echo '["'.$data[$key]["Fecha"].'",  '.$data[$key]["Conductividad Electrica"].','.$data[$key]["Temperatura"].','.$data[$key]["Ph"].'],';
+          echo '["'.$key.'", '.$value[$key2]["CE"].','.$value[$key2]["T"].','.$value[$key2]["pH"].'],';
 
+      }
   }
 }
 
@@ -33,7 +35,7 @@ echo <<< EOF
           ["Fechas", "CE", "Temp",  "Ph"],
 EOF;
 
-varGraficos();
+verGraficos();
 
 echo <<< EOF
 

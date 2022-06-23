@@ -1,5 +1,0 @@
-Fecha: 23-May-2022 11:40 AM
-Conductividad Electrica: s/cm
-Temperatura: °
-Ph: 
-

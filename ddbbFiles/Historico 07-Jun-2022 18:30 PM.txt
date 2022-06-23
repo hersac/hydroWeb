@@ -1,5 +1,0 @@
-Fecha: 07-Jun-2022 18:30 PM
-Conductividad Electrica: 0s/cm
-Temperatura: 0°
-Ph: 4.1
-

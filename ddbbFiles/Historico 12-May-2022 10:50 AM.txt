@@ -1,5 +1,0 @@
-Fecha: 12-May-2022 10:50 AM
-Conductividad Electrica: 606s/cm
-Temperatura: 618°
-Ph: 649
-

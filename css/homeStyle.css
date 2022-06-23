@@ -127,8 +127,8 @@ table{
 }
 
 .showInfo{
-	margin: 5px;
-	padding: 5px;
+	margin: 10px;
+	padding: 10px;
 	background: #68a80020;
 	color: #ffffff;
 	font-size: 20px;
@@ -136,12 +136,25 @@ table{
 	overflow-y: scroll;
 	border-radius: 5px;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: minmax(300px, auto);
+	grid-template-columns: repeat(6, 1fr);
+}
 
+.infoH{
+	background-color: #ffffff00;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.infoH:hover{
+	background-color: #ffffff20;
 }
 
 .btnDownload{
-	margin: 20px;
+	margin: 0 auto;
+	width: 50px;
+	height: 20px;
 	font-size: 20px;
 	padding: 10px;
 	border: none;
